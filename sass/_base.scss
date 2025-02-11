@@ -19,11 +19,11 @@ body {
 	font-family: $ff-gothic;
 	font-size: $fz-base;
 	font-weight: $fw-base;
-	color: $MainColor;
+	color: $fc-black;
 	line-height: $lh-base;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: $BaseColor1;
+	background: $bgc-white;
 	overflow-x: hidden;
 }
 
@@ -53,7 +53,13 @@ a:link,a:visited,a:hover,a:active{
 }
 
 
+li{
+	list-style-type: none;
+}
 
+a{
+	cursor: pointer;
+}
 
 table {
 	border-collapse: collapse;

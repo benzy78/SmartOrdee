@@ -1,0 +1,515 @@
+// mainvisual
+.mainvisual{
+  background: $bgc-orange-grad;
+  color: $fc-black;
+  padding: 0 5%;
+}
+.mv__inner{
+  padding: 168px 0 64px;
+  background-image: url(../images/mv.png);
+  background-size: 45% auto;
+  background-position: 95% 65%;
+  background-repeat: no-repeat;
+  @include tab{
+    background-size: 50% auto;
+  }
+  @include sp{
+    background-size: 100% auto;
+    background-position: 5% 17%;
+  }
+}
+.mv__cont{
+  width: 50%;
+  @include tab{
+    width: 60%;
+  }
+  @include sp{
+    width: 100%;
+    padding-top: 75%;
+  }
+}
+.mv__ttl{
+  font-size: 48px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 48px;
+  @include tab{
+    font-size: 32px;
+    width: 80%;
+    margin-bottom: 32px;
+  }
+  @include sp{
+    width: 100%;
+    font-size: 24px;
+  }
+}
+.mv__caption{
+  font-size: 20px;
+  margin-bottom: 48px;
+  width: 80%;
+  @include tab{
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  @include sp{
+    width: 100%;
+  }
+}
+.mv__btn-cont{
+  display: flex;
+  gap: 32px;
+  @include tab{
+    gap: 24px;
+  }
+  @include sp{
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+// mainvisual end
+
+// service
+.service{
+  padding: 48px 5% 64px;
+  background: $bgc-glay-grad;
+}
+.serv__cont{
+  display: flex;
+  gap: 32px;
+  @include tab{
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+.serv__text{
+  width: 50%;
+  @include tab{
+    width: 100%;
+  }
+  .secondary-btn{
+    @include tab{
+      display: none;
+    }
+  }
+}
+.serv__caption{
+  margin-bottom: 32px;
+  font-size: 16px;
+  @include tab{
+    margin-bottom: 0;
+  }
+}
+.serv__list{
+  width: 50%;
+  @include tab{
+    width: 100%;
+  }
+  li{
+    margin-bottom: 24px;
+    &:last-child{
+      margin-bottom: 0;
+      @include tab{
+        margin-bottom: 24px;
+      }
+    }
+    .fas{
+      font-size: 32px;
+      margin-right: 16px;
+      color: $pc-red;
+      vertical-align: bottom;
+      @include sp{
+        font-size: 24px;
+      }
+    }
+  }
+}
+.pc-none{
+  display: none;
+  @include tab{
+    display: block;
+  }
+}
+// service end
+
+// feature
+.feature{
+  padding: 48px 5% 64px;
+  background: $bgc-orange-grad;
+}
+.fea__cont{
+  display: flex;
+  gap: 32px;
+  @include tab{
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+.fea__text{
+  width: 50%;
+  @include tab{
+    width: 100%;
+  }
+  .secondary-btn{
+    @include tab{
+      display: none;
+    }
+  }
+}
+.fea__caption{
+  margin-bottom: 32px;
+  font-size: 16px;
+  @include tab{
+    margin-bottom: 0;
+  }
+}
+.fea__list{
+  width: 50%;
+  @include tab{
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  li{
+    margin-bottom: 24px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .fas{
+      font-size: 32px;
+      margin-right: 16px;
+      color: $pc-red;
+      vertical-align: bottom;
+      @include sp{
+        font-size: 24px;
+      }
+    }
+  }
+}
+// feature end
+
+// example
+.example{
+  padding: 48px 5% 64px;
+  background: $bgc-glay-grad;
+  color: $fc-black;
+}
+.exam__card{
+  margin-bottom: 32px;
+  border: 1px solid $bgc-glay;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 24px;
+  display: flex;
+  gap: 32px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  @include tab{
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+.exam__img{
+  width: 40%;
+  @include tab{
+    width: 70%;
+  }
+  @include sp{
+    width: 100%;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.exam__text{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include tab{
+    width: 100%;
+  }
+}
+.exam__card-ttl{
+  font-size: 20px;
+  margin-bottom: 24px;
+  span{
+    margin-left: 16px;
+    font-size: 16px;
+  }
+  @include sp{
+    font-size: 16px;
+  }
+}
+.exam__card-caption{
+  font-size: 20px;
+  color: $pc-red;
+  font-weight: 600;
+  margin-bottom: 24px;
+  @include sp{
+    font-size: 16px;
+  }
+}
+.exam__issue-ttl{
+  margin-bottom: 8px;
+}
+.exam__issue-list{
+  margin-bottom: 24px;
+  li{
+    margin-bottom: 8px;
+  }
+  img{
+    width: 32px;
+    height: 32px;
+    vertical-align: bottom;
+    margin-right: 8px;
+    @include sp{
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.exam__result-ttl{
+  margin-bottom: 8px;
+}
+.exam__result-list{
+  li{
+    margin-bottom: 8px;
+    img{
+      width: 32px;
+      height: 32px;
+      margin-right: 8px;
+      vertical-align: bottom;
+      @include sp{
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+.exam__btn-cont{
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  @include sp{
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+// example end
+
+// plan
+.plan{
+  padding: 48px 5% 64px;
+  background: $bgc-orange-grad;
+  position: relative;
+}
+.plan__caption{
+  max-width: 50%;
+  margin-bottom: 32px;
+  @include tab{
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+  span{
+    font-size: 20px;
+    color: $pc-red;
+    display: block;
+  }
+}
+.plan__card-cont{
+  margin-bottom: 48px;
+  @include tab{
+    margin-bottom: 24px;
+  }
+}
+.plan__annotation{
+  color: $fc-white;
+  background-color: $pc-red;
+  border-radius: 100%;
+  width: 300px;
+  text-align: center;
+  padding: 48px;
+  position: absolute;
+  right: 104px;
+  top: 48px;
+  @include tab{
+    top: 32px;
+    right: 5%;
+  }
+  @include sp{
+    display: none;
+  }
+}
+.plan__card-ttl{
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.plan__card-price{
+  font-weight: bold;
+  font-size: 20px;
+  color: $pc-red;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.plan__card-for{
+  text-align: center;
+  margin-bottom: 8px;
+}
+.plan__function-ttl{
+  margin-bottom: 8px;
+}
+.plan__function-list{
+  li{
+    margin-bottom: 8px;
+    .fas{
+      font-size: 32px;
+      margin-right: 8px;
+      color: $pc-red;
+      vertical-align: bottom;
+    }
+  }
+}
+.plan__btn{
+  margin: 0 auto;
+}
+// plan end
+
+// question
+.question{
+  padding: 48px 5% 64px;
+  background: $bgc-glay-grad;
+}
+.ques__card{
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: $bgc-white;
+  margin-bottom: 32px;
+  border: 1px solid $bgc-glay;
+  position: relative;
+}
+.ques__card-upper{
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  @include sp{
+    margin-bottom: 0;
+  }
+}
+.ques__card-ttl{
+  font-size: 16px;
+}
+.ques__card-number{
+  font-size: 20px;
+  color: $pc-red;
+  font-weight: bold;
+}
+.ques__card-ttl{
+  @include sp{
+    width: 70%;
+  }
+}
+.ques__card-btn{
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  background-color:$pc-red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: none;
+  @include sp{
+    display: block;
+  }
+}
+
+.ques__card-btn::before,
+.ques__card-btn::after {
+  content: "";
+  position: absolute;
+  background-color: $bgc-white;
+  transition: all 0.3s ease-in-out;
+}
+
+.ques__card-btn::before {
+  width: 60%;
+  height: 3px;
+  top: 21px;
+  left: 9px;
+}
+
+.ques__card-btn::after {
+  width: 3px;
+  height: 60%;
+  top:  9px;
+  left: 21px;
+}
+
+.turn.ques__card-btn::before,
+.turn.ques__card-btn::after {
+  -webkit-transform: translateY(0) rotate(135deg);
+  -ms-transform: translateY(0) rotate(135deg);
+  transform: translateY(0) rotate(135deg);
+}
+
+.ques__card-lower{
+  display: flex;
+  gap: 16px;
+  transition: all 0.3s ease-in-out;
+  @include sp{
+    display: none;
+    opacity: 0;
+    margin-top: 8px;
+  }
+}
+.ques__card-lower.show{
+  display: flex;
+  opacity: 1;
+}
+.ques__card-check{
+  width: 32px;
+  height: 32px;
+}
+.ques__btn-cont{
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  @include sp{
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+
+// question end
+
+// アニメーション
+.fadein {
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.fadein.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-fadein {
+  opacity: 0; 
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-fadein.show{
+  opacity: 1;
+  transform: translateY(0);
+}

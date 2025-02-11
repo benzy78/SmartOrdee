@@ -1,7 +1,42 @@
 /*
     footer
 */
-
+.footer{
+    padding: 48px 5% 64px;
+    background: $pc-grad;
+    color: $fc-white;
+}
+.footer__cont{
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    @include sp{
+        flex-wrap: wrap;
+    }
+}
+.footer__menu{
+    width: 33.3%;
+    @include sp{
+        width: 100%;
+    }
+}
+.footer__menu-ttl{
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+.footer__nav-list{
+    margin-left: 24px;
+    li{
+        margin-bottom: 16px;
+        a{
+            color: $fc-white;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color: $sc-orange;
+            }
+        }
+    }
+}
 /*
     footer end
 */
