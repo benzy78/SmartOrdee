@@ -1360,6 +1360,13 @@ select:focus {
   left: 50%;
   transform: translateX(-50%);
 }
+@media (max-width: 768px) {
+  .func__card-number {
+    font-size: 24px;
+    padding: 4px 18px;
+    top: -24px;
+  }
+}
 
 .func__card-ttl {
   font-size: 20px;
@@ -1419,6 +1426,13 @@ select:focus {
   top: -32px;
   left: 50%;
   transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  .merit__card-number {
+    font-size: 24px;
+    padding: 4px 18px;
+    top: -24px;
+  }
 }
 
 .merit__card-ttl {
