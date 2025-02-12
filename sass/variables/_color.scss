@@ -2,7 +2,7 @@
 
 // Primary Color
 $pc-red:#a52a2a;
-$pc-grad: linear-gradient(90deg, #A52A2A 0%, #DC6343 100%);
+$pc-grad: linear-gradient(135deg, #A52A2A 0%, #DC6343 100%);
 
 // Secondary-Color
 $sc-orange:#d77a61;
@@ -10,14 +10,14 @@ $sc-orange:#d77a61;
 // hover時
 $hover-red:#8b2c2c;
 $hover-orange:#b85c4d;
-$hover-grad:linear-gradient(90deg, #8b2c2c 0%, #b85c4d 100%);
+$hover-grad:linear-gradient(135deg, #8b2c2c 0%, #b85c4d 100%);
 
 // Background-Color
 $bgc-white:#fff;
 $bgc-glay:#f0f0f0;
 $bgc-orange:#ffe4dd;
-$bgc-glay-grad:linear-gradient(98deg, #FFF 0%, #F0F0F0 100%);
-$bgc-orange-grad:linear-gradient(291deg, #FFE4DD 0%, #FFF 100%);
+$bgc-glay-grad:linear-gradient(135deg, #FFF 0%, #F0F0F0 100%);
+$bgc-orange-grad:linear-gradient(135deg, #FFF 0%, #FFE4DD 100%);
 
 // font-color
 $fc-black:#2c2c2c;

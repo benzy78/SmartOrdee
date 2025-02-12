@@ -225,6 +225,10 @@
     img{
       width: 32px;
       height: 32px;
+      @include sp{
+        width: 24px;
+        height: 24px;
+      }
     }
   }
   thead{
@@ -298,8 +302,8 @@
       margin-right: 16px;
       vertical-align: bottom;
       @include sp{
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
       }
     }
   }

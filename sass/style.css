@@ -274,7 +274,7 @@ select:focus {
   text-align: center;
   font-size: 16px;
   padding: 20px 8px;
-  background: linear-gradient(90deg, #A52A2A 0%, #DC6343 100%);
+  background: linear-gradient(135deg, #A52A2A 0%, #DC6343 100%);
   color: #fff;
   border-radius: 100px;
   font-weight: 500;
@@ -284,7 +284,7 @@ select:focus {
 .primary-btn:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
-  background: linear-gradient(90deg, #8b2c2c 0%, #b85c4d 100%);
+  background: linear-gradient(135deg, #8b2c2c 0%, #b85c4d 100%);
 }
 @media (max-width: 768px) {
   .primary-btn {
@@ -350,7 +350,7 @@ select:focus {
 
 .cta-section {
   padding: 48px 5% 64px;
-  background: linear-gradient(291deg, #FFE4DD 0%, #FFF 100%);
+  background: linear-gradient(135deg, #FFF 0%, #FFE4DD 100%);
 }
 
 .cta__ttl {
@@ -390,7 +390,7 @@ select:focus {
 }
 
 .mainvisual {
-  background: linear-gradient(291deg, #FFE4DD 0%, #FFF 100%);
+  background: linear-gradient(135deg, #FFF 0%, #FFE4DD 100%);
   color: #2c2c2c;
   padding: 0 5%;
 }
@@ -484,7 +484,7 @@ select:focus {
 
 .service {
   padding: 48px 5% 64px;
-  background: linear-gradient(98deg, #FFF 0%, #F0F0F0 100%);
+  background: linear-gradient(135deg, #FFF 0%, #F0F0F0 100%);
 }
 
 .serv__cont {
@@ -564,7 +564,7 @@ select:focus {
 
 .feature {
   padding: 48px 5% 64px;
-  background: linear-gradient(291deg, #FFE4DD 0%, #FFF 100%);
+  background: linear-gradient(135deg, #FFF 0%, #FFE4DD 100%);
 }
 
 .fea__cont {
@@ -631,7 +631,7 @@ select:focus {
 
 .example {
   padding: 48px 5% 64px;
-  background: linear-gradient(98deg, #FFF 0%, #F0F0F0 100%);
+  background: linear-gradient(135deg, #FFF 0%, #F0F0F0 100%);
   color: #2c2c2c;
 }
 
@@ -697,6 +697,7 @@ select:focus {
 @media (max-width: 768px) {
   .exam__card-ttl {
     font-size: 16px;
+    margin-bottom: 16px;
   }
 }
 
@@ -709,6 +710,7 @@ select:focus {
 @media (max-width: 768px) {
   .exam__card-caption {
     font-size: 16px;
+    margin-bottom: 16px;
   }
 }
 
@@ -718,6 +720,11 @@ select:focus {
 
 .exam__issue-list {
   margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .exam__issue-list {
+    margin-bottom: 16px;
+  }
 }
 .exam__issue-list li {
   margin-bottom: 8px;
@@ -769,7 +776,7 @@ select:focus {
 
 .plan {
   padding: 48px 5% 64px;
-  background: linear-gradient(291deg, #FFE4DD 0%, #FFF 100%);
+  background: linear-gradient(135deg, #FFF 0%, #FFE4DD 100%);
   position: relative;
 }
 
@@ -787,6 +794,11 @@ select:focus {
   font-size: 20px;
   color: #a52a2a;
   display: block;
+}
+@media (max-width: 768px) {
+  .plan__caption span {
+    font-size: 16px;
+  }
 }
 
 .plan__card-cont {
@@ -853,6 +865,11 @@ select:focus {
   color: #a52a2a;
   vertical-align: bottom;
 }
+@media (max-width: 768px) {
+  .plan__function-list li .fas {
+    font-size: 24px;
+  }
+}
 
 .plan__btn {
   margin: 0 auto;
@@ -860,7 +877,7 @@ select:focus {
 
 .question {
   padding: 48px 5% 64px;
-  background: linear-gradient(98deg, #FFF 0%, #F0F0F0 100%);
+  background: linear-gradient(135deg, #FFF 0%, #F0F0F0 100%);
 }
 
 .ques__card {
@@ -872,6 +889,11 @@ select:focus {
   border: 1px solid #f0f0f0;
   position: relative;
 }
+@media (max-width: 768px) {
+  .ques__card {
+    padding: 24px 16px;
+  }
+}
 
 .ques__card-upper {
   display: flex;
@@ -881,6 +903,7 @@ select:focus {
 @media (max-width: 768px) {
   .ques__card-upper {
     margin-bottom: 0;
+    gap: 8px;
   }
 }
 
@@ -892,6 +915,11 @@ select:focus {
   font-size: 20px;
   color: #a52a2a;
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  .ques__card-number {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -958,6 +986,7 @@ select:focus {
     display: none;
     opacity: 0;
     margin-top: 8px;
+    gap: 8px;
   }
 }
 
@@ -969,6 +998,12 @@ select:focus {
 .ques__card-check {
   width: 32px;
   height: 32px;
+}
+@media (max-width: 768px) {
+  .ques__card-check {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .ques__btn-cont {
@@ -1150,7 +1185,7 @@ select:focus {
     display: block;
     position: absolute;
     height: 100vh;
-    background: linear-gradient(90deg, #A52A2A 0%, #DC6343 100%);
+    background: linear-gradient(135deg, #A52A2A 0%, #DC6343 100%);
     top: 0;
     width: 100%;
     left: 0;
@@ -1176,7 +1211,7 @@ select:focus {
 */
 .footer {
   padding: 48px 5% 64px;
-  background: linear-gradient(90deg, #A52A2A 0%, #DC6343 100%);
+  background: linear-gradient(135deg, #A52A2A 0%, #DC6343 100%);
   color: #fff;
 }
 
@@ -1198,6 +1233,11 @@ select:focus {
   .footer__menu {
     width: 100%;
   }
+}
+
+.footer__logo img {
+  width: 200px;
+  height: auto;
 }
 
 .footer__menu-ttl {
@@ -1223,7 +1263,7 @@ select:focus {
     footer end
 */
 .servicing {
-  background: linear-gradient(291deg, #FFE4DD 0%, #FFF 100%);
+  background: linear-gradient(135deg, #FFF 0%, #FFE4DD 100%);
   padding: 85px 5% 0;
 }
 @media (max-width: 992px) {
@@ -1279,7 +1319,7 @@ select:focus {
 
 .function {
   padding: 48px 5% 16px;
-  background: linear-gradient(98deg, #FFF 0%, #F0F0F0 100%);
+  background: linear-gradient(135deg, #FFF 0%, #F0F0F0 100%);
 }
 
 .func__card-cont {
@@ -1344,7 +1384,7 @@ select:focus {
 
 .merit {
   padding: 48px 5% 16px;
-  background: linear-gradient(291deg, #FFE4DD 0%, #FFF 100%);
+  background: linear-gradient(135deg, #FFF 0%, #FFE4DD 100%);
 }
 
 .merit__card-cont {
@@ -1403,11 +1443,11 @@ select:focus {
 }
 
 .bg-glay {
-  background: linear-gradient(98deg, #FFF 0%, #F0F0F0 100%);
+  background: linear-gradient(135deg, #FFF 0%, #F0F0F0 100%);
 }
 
 .planning {
-  background: linear-gradient(291deg, #FFE4DD 0%, #FFF 100%);
+  background: linear-gradient(135deg, #FFF 0%, #FFE4DD 100%);
   padding: 85px 5% 0;
 }
 @media (max-width: 992px) {
@@ -1463,7 +1503,7 @@ select:focus {
 
 .comparison {
   padding: 48px 5% 64px;
-  background: linear-gradient(291deg, #FFE4DD 0%, #FFF 100%);
+  background: linear-gradient(135deg, #FFF 0%, #FFE4DD 100%);
 }
 
 .comp__table {
@@ -1492,6 +1532,12 @@ select:focus {
 .comp__table td img {
   width: 32px;
   height: 32px;
+}
+@media (max-width: 768px) {
+  .comp__table td img {
+    width: 24px;
+    height: 24px;
+  }
 }
 .comp__table thead th:nth-child(3) {
   border: 2px solid #d77a61;
@@ -1567,14 +1613,14 @@ select:focus {
 }
 @media (max-width: 768px) {
   .selec__list li img {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
   }
 }
 
 .company {
   padding: 133px 5% 64px;
-  background: linear-gradient(291deg, #FFE4DD 0%, #FFF 100%);
+  background: linear-gradient(135deg, #FFF 0%, #FFE4DD 100%);
 }
 
 .company__cont {
@@ -1614,7 +1660,7 @@ select:focus {
 
 .information {
   padding: 48px 5% 64px;
-  background: linear-gradient(98deg, #FFF 0%, #F0F0F0 100%);
+  background: linear-gradient(135deg, #FFF 0%, #F0F0F0 100%);
 }
 
 .info__cont {
@@ -1660,7 +1706,7 @@ select:focus {
 }
 
 .commingsoon {
-  background: linear-gradient(90deg, #A52A2A 0%, #DC6343 100%);
+  background: linear-gradient(135deg, #A52A2A 0%, #DC6343 100%);
   color: #fff;
   padding: 232px 5%;
 }

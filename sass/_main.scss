@@ -241,6 +241,7 @@
   }
   @include sp{
     font-size: 16px;
+    margin-bottom: 16px;
   }
 }
 .exam__card-caption{
@@ -250,6 +251,7 @@
   margin-bottom: 24px;
   @include sp{
     font-size: 16px;
+    margin-bottom: 16px;
   }
 }
 .exam__issue-ttl{
@@ -257,6 +259,9 @@
 }
 .exam__issue-list{
   margin-bottom: 24px;
+  @include sp{
+    margin-bottom: 16px;
+  }
   li{
     margin-bottom: 8px;
   }
@@ -317,6 +322,9 @@
     font-size: 20px;
     color: $pc-red;
     display: block;
+    @include sp{
+      font-size: 16px;
+    }
   }
 }
 .plan__card-cont{
@@ -370,6 +378,9 @@
       margin-right: 8px;
       color: $pc-red;
       vertical-align: bottom;
+      @include sp{
+        font-size: 24px;
+      }
     }
   }
 }
@@ -391,6 +402,9 @@
   margin-bottom: 32px;
   border: 1px solid $bgc-glay;
   position: relative;
+  @include sp{
+    padding: 24px 16px;
+  }
 }
 .ques__card-upper{
   display: flex;
@@ -398,6 +412,7 @@
   margin-bottom: 16px;
   @include sp{
     margin-bottom: 0;
+    gap: 8px;
   }
 }
 .ques__card-ttl{
@@ -407,6 +422,9 @@
   font-size: 20px;
   color: $pc-red;
   font-weight: bold;
+  @include sp{
+    font-size: 16px;
+  }
 }
 .ques__card-ttl{
   @include sp{
@@ -469,6 +487,7 @@
     display: none;
     opacity: 0;
     margin-top: 8px;
+    gap: 8px;
   }
 }
 .ques__card-lower.show{
@@ -478,6 +497,10 @@
 .ques__card-check{
   width: 32px;
   height: 32px;
+  @include sp{
+    width: 24px;
+    height: 24px;
+  }
 }
 .ques__btn-cont{
   display: flex;
