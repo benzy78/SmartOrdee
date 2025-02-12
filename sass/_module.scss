@@ -20,6 +20,23 @@
   }
 }
 
+.section-ttl--02{
+  font-size: 32px;
+  padding-left: 16px;
+  margin-bottom: 48px;
+  border-left: 8px solid transparent;
+  border-image: linear-gradient(180deg, #A52A2A 0%, #DC6343 100%);
+  border-image-slice: 1; 
+  @include sp{
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.section-caption{
+  width: 100%;
+}
+
 .primary-btn{
   max-width: 230px;
   width: 100%;

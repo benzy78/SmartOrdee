@@ -1,0 +1,404 @@
+// servicing
+.servicing{
+  background: $bgc-orange-grad;
+  padding: 85px 5% 0;
+  @include tab{
+    padding-top: 109px;
+    padding-bottom: 24px;
+  }
+  @include sp{
+    padding-top: 80px;
+  }
+}
+.servicing__cont{
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  @include sp{
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+.servicing__text{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include sp{
+    width: 100%;
+    order: 2;
+  }
+}
+.servicing__img{
+  width: 40%;
+  height: auto;
+  position: relative;
+  top: 0px;
+  @include sp{
+    width: 100%;
+    order: 1;
+    top: 0;
+  }
+}
+
+.function{
+  padding: 48px 5% 16px;
+  background: $bgc-glay-grad;
+}
+
+.func__card-cont{
+  flex-wrap: wrap;
+  gap: 2%;
+  @include sp{
+    gap:0;
+  }
+}
+.func__card{
+  width: 32%;
+  position: relative;
+  padding-top: 40px;
+  margin-bottom: 48px;
+  @include tab{
+    width: 49%;
+  }
+  @include sp{
+    width: 100%;
+  }
+}
+.func__card-number{
+  font-size: 32px;
+  background-color: $pc-red;
+  padding: 4px 23px;
+  color: $fc-white;
+  border-radius:100%;
+  position:absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.func__card-ttl{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.func__card-list{
+  li{
+    font-size: 16px;
+    margin-bottom: 16px;
+    span{
+      font-size: 20px;
+      color: $pc-red;
+      font-weight: 600;
+    }
+    .fas{
+      margin-right: 8px;
+      font-size: 24px;
+      color: $pc-red;
+    }
+  }
+}
+
+.merit{
+  padding: 48px 5% 16px;
+  background: $bgc-orange-grad;
+}
+.merit__card-cont{
+  gap: 2%;
+  flex-wrap: wrap;
+  @include sp{
+    gap: 0;
+  }
+}
+.merit__card{
+  width: 49%;
+  margin-bottom: 48px;
+  padding-top: 40px;
+  position: relative;
+  @include sp{
+    width: 100%;
+  }
+}
+.merit__card-number{
+  font-size: 32px;
+  background-color: $pc-red;
+  padding: 4px 23px;
+  color: $fc-white;
+  border-radius:100%;
+  position:absolute;
+  top: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.merit__card-ttl{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.merit__card-list{
+  li{
+    font-size: 16px;
+    margin-bottom: 16px;
+    span{
+      font-size: 20px;
+      color: $pc-red;
+      font-weight: 600;
+    }
+    .fas{
+      margin-right: 8px;
+      font-size: 24px;
+      color: $pc-red;
+    }
+  }
+}
+
+.bg-glay{
+  background: $bgc-glay-grad;
+}
+// servicing end
+
+// planning
+.planning{
+  background: $bgc-orange-grad;
+  padding: 85px 5% 0;
+  @include tab{
+    padding-top: 109px;
+    padding-bottom: 24px;
+  }
+  @include sp{
+    padding-top: 80px;
+  }
+}
+.planning__cont{
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  @include sp{
+    flex-wrap: wrap;
+    gap: 0;
+  }
+}
+.planning__text{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include sp{
+    width: 100%;
+    order: 2;
+  }
+}
+.planning__img{
+  width: 40%;
+  height: auto;
+  position: relative;
+  top: 0px;
+  @include sp{
+    width: 100%;
+    order: 1;
+    top: 0;
+  }
+}
+
+.comparison{
+  padding: 48px 5% 64px;
+  background: $bgc-orange-grad;
+}
+.comp__table{
+  width: 100%;
+  th, td{
+    text-align: center;
+    padding: 16px;
+    vertical-align: middle;
+    border: 1px solid $bgc-white;
+    @include sp{
+      padding: 16px 8px;
+      font-size: 14px;
+    }
+  }
+  th{
+    padding: 24px;
+    @include sp{
+      padding: 16px 8px;
+    }
+  }
+  td{
+    img{
+      width: 32px;
+      height: 32px;
+    }
+  }
+  thead{
+    th{
+      &:nth-child(3){
+        border: 2px solid $sc-orange;
+      }
+    }
+  }
+  tbody{
+    td{
+      &:nth-child(3){
+        border-left: 2px solid $sc-orange;
+        border-right: 2px solid $sc-orange;
+      }
+    }
+    .bb-orange{
+      border-bottom: 2px solid $sc-orange;
+    }
+  }
+}
+
+
+.comp__head-light{
+  background-color: $bgc-orange;
+}
+.comp__head-standard{
+  background-color: $sc-orange;
+  color: $fc-white;
+}
+.comp__head-pro{
+  background-color: $pc-red;
+  color: $fc-white;
+}
+.comp__table-row--orange{
+  background-color: $bgc-orange;
+}
+.comp__table-row--white{
+  background-color: $bgc-white;
+}
+
+
+.selection{
+  padding: 48px 5% 64px;
+  background-color: $bgc-white;
+}
+.selec__ttl{
+  font-size: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+  @include sp{
+    font-size: 24px;
+  }
+}
+.selec__list{
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  li{
+    font-size: 20px;
+    margin-bottom: 16px;
+    @include sp{
+      font-size: 16px;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+    img{
+      width: 40px;
+      height: 40px;
+      margin-right: 16px;
+      vertical-align: bottom;
+      @include sp{
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+// planning end
+
+// company
+.company{
+  padding: 133px 5% 64px;
+  background: $bgc-orange-grad;
+}
+.company__cont{
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  @include sp{
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+.company__text{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include sp{
+    width: 100%;
+    order: 2;
+  }
+}
+.company__img{
+  width: 40%;
+  @include sp{
+    width: 100%;
+    order: 1;
+  }
+}
+.information{
+  padding: 48px 5% 64px;
+  background: $bgc-glay-grad;
+}
+.info__cont{
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  @include sp{
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+.info__list{
+  width: 50%;
+  @include sp{
+    width: 100%;
+  }
+  li{
+    font-size: 20px;
+    margin-bottom: 16px;
+    @include sp{
+      font-size: 16px;
+    }
+  }
+}
+.info__map{
+  width: 50%;
+  @include sp{
+    width: 100%;
+  }
+  iframe{
+    width: 100%;
+  }
+}
+// company end
+
+// commingsoon
+.commingsoon{
+  background: $pc-grad;
+  color: $fc-white;
+  padding: 232px 5%;
+  .secondary-btn{
+    margin: 0 auto;
+  }
+}
+.comm__ttl{
+  font-size: 32px;
+  color: $fc-white;
+  margin-bottom: 32px;
+  text-align: center;
+  @include sp{
+    font-size: 24px;
+  }
+}
+.comm__caption{
+  font-size: 20px;
+  color: $fc-white;
+  margin-bottom: 32px;
+  text-align: center;
+  @include sp{
+    font-size: 16px;
+  }
+}
+// commingsoon end
