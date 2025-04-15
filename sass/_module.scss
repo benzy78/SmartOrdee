@@ -50,7 +50,7 @@
   display: block;
   transition: all 0.3s ease-in-out;
   &:hover{
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px); 
     background: $hover-grad;
   }
@@ -73,7 +73,7 @@
   font-weight: 500;
   transition: all 0.3s ease-in-out;
   &:hover{
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transform: translateY(-2px); 
     background: $bgc-glay;
   }
@@ -94,7 +94,7 @@
 .card{
   padding: 24px;
   border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
   width: 33.3%;
   background-color: $bgc-white;
   @include tab{

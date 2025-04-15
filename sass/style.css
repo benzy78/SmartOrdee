@@ -282,7 +282,7 @@ select:focus {
   transition: all 0.3s ease-in-out;
 }
 .primary-btn:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
   background: linear-gradient(135deg, #8b2c2c 0%, #b85c4d 100%);
 }
@@ -308,7 +308,7 @@ select:focus {
   transition: all 0.3s ease-in-out;
 }
 .secondary-btn:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
   background: #f0f0f0;
 }
@@ -333,7 +333,7 @@ select:focus {
 .card {
   padding: 24px;
   border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
   width: 33.3%;
   background-color: #fff;
 }
@@ -638,7 +638,7 @@ select:focus {
 .exam__card {
   margin-bottom: 32px;
   border: 1px solid #f0f0f0;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 24px;
   display: flex;
@@ -883,7 +883,7 @@ select:focus {
 .ques__card {
   padding: 24px;
   border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   margin-bottom: 32px;
   border: 1px solid #f0f0f0;
@@ -1052,12 +1052,11 @@ select:focus {
   left: 0;
   width: 100%;
   z-index: 100;
-  border-bottom: 2px solid #a52a2a;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 992px) {
   .header {
-    padding: 16px 5% 8px;
+    padding: 16px 24px;
   }
 }
 
@@ -1098,8 +1097,8 @@ select:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 56px;
-    width: 48px;
+    height: 48px;
+    width: 44px;
     padding: 0;
     position: relative;
     z-index: 100;
@@ -1112,13 +1111,25 @@ select:focus {
   width: 100%;
   border-radius: 5px;
   transition: all 0.4s ease-in-out 0s;
+  position: absolute;
+}
+.menu-icon:nth-child(1) {
+  top: 8px;
+}
+.menu-icon:nth-child(2) {
+  top: 16px;
+}
+.menu-icon:nth-child(3) {
+  top: 24px;
 }
 
 .menu-label {
   font-size: 14px;
   color: #a52a2a;
-  padding: 0 7px;
+  padding: 0 4px;
   transition: all 0.3s ease-in-out 0s;
+  position: absolute;
+  top: 34px;
 }
 
 .header__nav-links {
@@ -1159,14 +1170,11 @@ select:focus {
   }
 }
 
-.active .menu-toggle {
-  top: 8px;
-}
 @media (max-width: 992px) {
   .active .menu-toggle .menu-icon:nth-child(1) {
     transform: translateY(0) rotate(225deg);
     position: absolute;
-    top: 10px;
+    top: 16px;
     background-color: #fff;
   }
   .active .menu-toggle .menu-icon:nth-child(2) {
@@ -1189,7 +1197,7 @@ select:focus {
     top: 0;
     width: 100%;
     left: 0;
-    padding: 30px;
+    padding: 80px 24px 24px;
     text-align: center;
     transition: all 0.3s ease-in-out;
   }
