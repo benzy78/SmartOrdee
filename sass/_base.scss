@@ -87,8 +87,8 @@ input,textarea {
 	-webkit-appearance: none;
 
 	&:focus {
-		outline: none;
-		border: 1px solid $MainColor;
+		outline: 1px solid #3b82f6;
+		border:none;
 		box-shadow: none;
 	}
 }
@@ -239,9 +239,9 @@ select {
 	}
 
 	&:focus {
-		outline: none;
-		border: 1px solid $MainColor;
+		outline: 1px solid #3b82f6;
 		box-shadow: none;
+		border: none;
 	}
 }
 

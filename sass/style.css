@@ -85,8 +85,8 @@ input, textarea {
   -webkit-appearance: none;
 }
 input:focus, textarea:focus {
-  outline: none;
-  border: 1px solid #363636;
+  outline: 1px solid #3b82f6;
+  border: none;
   box-shadow: none;
 }
 
@@ -211,9 +211,9 @@ select::-ms-expand {
   display: none;
 }
 select:focus {
-  outline: none;
-  border: 1px solid #363636;
+  outline: 1px solid #3b82f6;
   box-shadow: none;
+  border: none;
 }
 
 .hidden {
@@ -273,7 +273,8 @@ select:focus {
   width: 100%;
   text-align: center;
   font-size: 16px;
-  padding: 20px 8px;
+  line-height: 1;
+  padding: 20px;
   background: linear-gradient(135deg, #A52A2A 0%, #DC6343 100%);
   color: #fff;
   border-radius: 100px;
@@ -299,7 +300,8 @@ select:focus {
   width: 100%;
   text-align: center;
   font-size: 16px;
-  padding: 19px 8px;
+  line-height: 1;
+  padding: 20px;
   background: #fff;
   color: #a52a2a;
   border: 1px solid #a52a2a;
@@ -370,6 +372,7 @@ select:focus {
   max-width: 800px;
   width: 100%;
   margin: 0 auto 32px;
+  color: #555;
 }
 @media (max-width: 768px) {
   .cta__caption {
@@ -430,10 +433,12 @@ select:focus {
 }
 
 .mv__ttl {
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 500;
+  line-height: 1.5;
   line-height: normal;
   margin-bottom: 48px;
+  max-width: 600px;
 }
 @media (max-width: 992px) {
   .mv__ttl {
@@ -450,9 +455,10 @@ select:focus {
 }
 
 .mv__caption {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 48px;
   width: 80%;
+  color: #555;
 }
 @media (max-width: 992px) {
   .mv__caption {
@@ -719,6 +725,7 @@ select:focus {
 }
 
 .exam__issue-list {
+  color: #555;
   margin-bottom: 24px;
 }
 @media (max-width: 768px) {
@@ -748,6 +755,7 @@ select:focus {
 
 .exam__result-list li {
   margin-bottom: 8px;
+  color: #555;
 }
 .exam__result-list li img {
   width: 32px;
@@ -850,6 +858,7 @@ select:focus {
 .plan__card-for {
   text-align: center;
   margin-bottom: 8px;
+  color: #555;
 }
 
 .plan__function-ttl {
@@ -926,6 +935,10 @@ select:focus {
   .ques__card-ttl {
     width: 70%;
   }
+}
+
+.ques__card-answer {
+  color: #555;
 }
 
 .ques__card-btn {
@@ -1154,7 +1167,7 @@ select:focus {
 }
 .header__nav-links li a {
   color: #2c2c2c;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   padding-bottom: 8px;
   transition: all 0.3s ease-in-out;
@@ -1706,12 +1719,12 @@ select:focus {
   }
 }
 .info__list li {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 16px;
 }
 @media (max-width: 768px) {
   .info__list li {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -1758,4 +1771,117 @@ select:focus {
   .comm__caption {
     font-size: 16px;
   }
+}
+
+.contact {
+  padding: 133px 5% 64px;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto 48px;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.form-row.full {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-row.full button {
+  margin: 0 auto;
+}
+
+label {
+  width: 200px;
+  font-weight: normal;
+  padding-top: 10px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 768px) {
+  label {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+.required {
+  color: #a52a2a;
+  font-size: 14px;
+  margin-left: 4px;
+}
+@media (max-width: 768px) {
+  .required {
+    font-size: 12px;
+  }
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  flex: 1;
+  padding: 16px;
+  font-size: 16px;
+  background: #f7f7f7;
+  border: none;
+  border-radius: 8px;
+  resize: vertical;
+  color: #2c2c2c;
+}
+@media (max-width: 768px) {
+  input[type=text],
+  input[type=email],
+  select,
+  textarea {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+textarea {
+  min-height: 200px;
+}
+
+.consent {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.consent span {
+  margin-left: 24px;
+}
+
+.consent a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+button {
+  background: #a52a2a;
+  color: white;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.5;
+}
+button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }/*# sourceMappingURL=style.css.map */

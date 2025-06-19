@@ -29,10 +29,12 @@
   }
 }
 .mv__ttl{
-  font-size: 48px;
+  font-size: 44px;
   font-weight: 500;
+  line-height: 1.5;
   line-height: normal;
   margin-bottom: 48px;
+  max-width: 600px;
   @include tab{
     font-size: 32px;
     width: 80%;
@@ -44,9 +46,10 @@
   }
 }
 .mv__caption{
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 48px;
   width: 80%;
+  color: $fc-l-black;
   @include tab{
     font-size: 16px;
     margin-bottom: 32px;
@@ -258,6 +261,7 @@
   margin-bottom: 8px;
 }
 .exam__issue-list{
+  color: $fc-l-black;
   margin-bottom: 24px;
   @include sp{
     margin-bottom: 16px;
@@ -282,6 +286,7 @@
 .exam__result-list{
   li{
     margin-bottom: 8px;
+    color: $fc-l-black;
     img{
       width: 32px;
       height: 32px;
@@ -366,6 +371,7 @@
 .plan__card-for{
   text-align: center;
   margin-bottom: 8px;
+  color: $fc-l-black;
 }
 .plan__function-ttl{
   margin-bottom: 8px;
@@ -430,6 +436,9 @@
   @include sp{
     width: 70%;
   }
+}
+.ques__card-answer{
+  color: $fc-l-black;
 }
 .ques__card-btn{
   top: 16px;
