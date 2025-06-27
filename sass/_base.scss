@@ -89,7 +89,7 @@ input,textarea {
 	&:focus {
 		outline: 1px solid #3b82f6;
 		border:none;
-		box-shadow: none;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
 	}
 }
 
@@ -149,7 +149,7 @@ input {
 				outline: none;
 				border: 1px solid #fff;
 				box-shadow: none;
-				background: $MainColor;
+				background: $pc-red;
 			}
 		}
 
@@ -214,8 +214,8 @@ input {
 				height: 0.6em;
 				margin-top: -0.2em;
 				display: block;
-				border-left: 3px solid $MainColor;
-				border-bottom: 3px solid $MainColor;
+				border-left: 3px solid $pc-red;
+				border-bottom: 3px solid $pc-red;
 				opacity: 1;
 			}
 		}

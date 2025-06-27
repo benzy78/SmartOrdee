@@ -2,56 +2,57 @@
 .mainvisual{
   background: $bgc-orange-grad;
   color: $fc-black;
-  padding: 0 5%;
-}
-.mv__inner{
-  padding: 168px 0 64px;
-  background-image: url(../images/mv.png);
-  background-size: 45% auto;
-  background-position: 95% 65%;
-  background-repeat: no-repeat;
-  @include tab{
-    background-size: 50% auto;
-  }
+  padding: 160px 40px 40px;
   @include sp{
-    background-size: 100% auto;
-    background-position: 5% 17%;
+    padding: 120px 20px 40px;
   }
 }
 .mv__cont{
-  width: 50%;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  @include tab{
+    gap: 24px;
+  }
+  @include sp{
+    flex-direction: column;
+  }
+}
+.mv__cont-text{
+  width: calc(50% - 20px);
   @include tab{
     width: 60%;
   }
   @include sp{
+    order: 2;
     width: 100%;
-    padding-top: 75%;
   }
 }
 .mv__ttl{
   font-size: 44px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   line-height: normal;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   max-width: 600px;
   @include tab{
     font-size: 32px;
-    width: 80%;
     margin-bottom: 32px;
   }
   @include sp{
-    width: 100%;
     font-size: 24px;
+    margin-bottom: 16px;
   }
 }
 .mv__caption{
   font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.02em;
   margin-bottom: 48px;
-  width: 80%;
   color: $fc-l-black;
   @include tab{
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 32px;
   }
   @include sp{
@@ -60,205 +61,277 @@
 }
 .mv__btn-cont{
   display: flex;
-  gap: 32px;
+  gap: 24px;
   @include tab{
-    gap: 24px;
+    gap: 16px;
   }
   @include sp{
     flex-wrap: wrap;
     width: 100%;
+    gap: 16px;
+  }
+}
+.mv__cont-img{
+  width: calc(50% - 20px);
+  @include tab{
+    width: 40%;
+  }
+  @include sp{
+    order: 1;
+    width: 100%;
+  }
+  img{
+    width: 100%;
+    display: block;
   }
 }
 // mainvisual end
 
-// service
-.service{
-  padding: 48px 5% 64px;
-  background: $bgc-glay-grad;
+// worry
+.worry{
+  background-color: #fff;
+  padding: 48px 40px 64px;
+  @include sp{
+    padding: 24px 20px;
+  }
 }
-.serv__cont{
+.worry__cont{
   display: flex;
-  gap: 32px;
+  gap: 40px;
+  align-items: center;
   @include tab{
-    flex-wrap: wrap;
     gap: 24px;
   }
-}
-.serv__text{
-  width: 50%;
-  @include tab{
-    width: 100%;
-  }
-  .secondary-btn{
-    @include tab{
-      display: none;
-    }
+  @include sp{
+    gap: 20px;
+    flex-direction: column;
   }
 }
-.serv__caption{
-  margin-bottom: 32px;
-  font-size: 16px;
-  @include tab{
-    margin-bottom: 0;
-  }
-}
-.serv__list{
-  width: 50%;
-  @include tab{
-    width: 100%;
-  }
-  li{
-    margin-bottom: 24px;
-    &:last-child{
-      margin-bottom: 0;
-      @include tab{
-        margin-bottom: 24px;
-      }
-    }
-    .fas{
-      font-size: 32px;
-      margin-right: 16px;
-      color: $pc-red;
-      vertical-align: bottom;
-      @include sp{
-        font-size: 24px;
-      }
-    }
-  }
-}
-.pc-none{
-  display: none;
-  @include tab{
-    display: block;
-  }
-}
-// service end
-
-// feature
-.feature{
-  padding: 48px 5% 64px;
-  background: $bgc-orange-grad;
-}
-.fea__cont{
-  display: flex;
-  gap: 32px;
-  @include tab{
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-}
-.fea__text{
-  width: 50%;
-  @include tab{
-    width: 100%;
-  }
-  .secondary-btn{
-    @include tab{
-      display: none;
-    }
-  }
-}
-.fea__caption{
-  margin-bottom: 32px;
-  font-size: 16px;
-  @include tab{
-    margin-bottom: 0;
-  }
-}
-.fea__list{
-  width: 50%;
-  @include tab{
-    width: 100%;
-    margin-bottom: 24px;
-  }
-  li{
-    margin-bottom: 24px;
-    &:last-child{
-      margin-bottom: 0;
-    }
-    .fas{
-      font-size: 32px;
-      margin-right: 16px;
-      color: $pc-red;
-      vertical-align: bottom;
-      @include sp{
-        font-size: 24px;
-      }
-    }
-  }
-}
-// feature end
-
-// example
-.example{
-  padding: 48px 5% 64px;
-  background: $bgc-glay-grad;
-  color: $fc-black;
-}
-.exam__card{
-  margin-bottom: 32px;
-  border: 1px solid $bgc-glay;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  padding: 24px;
-  display: flex;
-  gap: 32px;
-  &:last-child{
-    margin-bottom: 0;
-  }
-  @include tab{
-    margin-bottom: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
-  }
-}
-.exam__img{
-  width: 40%;
-  @include tab{
-    width: 70%;
-  }
+.worry__img{
+  width: calc(50% - 20px);
   @include sp{
     width: 100%;
   }
   img{
     width: 100%;
-    height: auto;
+    display: block;
   }
 }
-.exam__text{
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  @include tab{
+.worry__text{
+  width: calc(50% - 20px);
+  @include sp{
     width: 100%;
   }
 }
-.exam__card-ttl{
-  font-size: 20px;
-  margin-bottom: 24px;
-  span{
-    margin-left: 16px;
+.worry__list{
+  li{
+    vertical-align: middle;
+    margin-bottom: 24px;
     font-size: 16px;
-  }
-  @include sp{
-    font-size: 16px;
-    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.75;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @include tab{
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    img{
+      width: 32px;
+      @include tab{
+        width: 24px;
+      }
+    }
   }
 }
-.exam__card-caption{
+.worry__message{
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    line-height: 1.75;
+    @include tab{
+      font-size: 16px;
+    }
+    span{
+      font-size: 28px;
+      color: $pc-red;
+      font-weight: bold;
+      @include tab{
+        font-size: 20px;
+      }
+    }
+}
+
+
+
+// service
+.service{
+  padding: 48px 40px 64px;
+  background: $bgc-glay-grad;
+  @include sp{
+    padding: 24px 20px;
+  }
+}
+.ser__desc{
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.75;
+  color: $fc-l-black;
+  @include tab{
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+}
+.ser__card-cont{
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  @include tab{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  @include sp{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+.ser__card{
+  img{
+    display: block;
+    margin: 0 auto 12px;
+    width: 56px;
+  }
+  .ser__card-ttl{
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 12px;
+    text-align: center;
+    @include tab{
+      font-size: 16px;
+    }
+  }
+  .ser__card-text{
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 2;
+    color: $fc-l-black;
+  }
+}
+// service end
+
+// select
+.select{
+  padding: 48px 40px 64px;
+  background: $bgc-orange-grad;
+  @include sp{
+    padding: 24px 20px;
+  }
+}
+.sele__cont{
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  @include tab{
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include sp{
+    gap: 24px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.sele__card{
+
+}
+.sele__card-number{
+  color: $pc-red;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin-bottom: 16px;
+  display: block;
+  @include tab{
+    font-size: 40px;
+    margin-bottom: 8px;
+  }
+  @include sp{
+    font-size: 32px;
+  }
+}
+.sele__card-ttl{
   font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  @include tab{
+    font-size: 16px;
+  }
+}
+.sele__card-text{
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 2;
+  color: $fc-l-black;
+}
+// select end
+
+// example
+.example{
+  padding: 48px 40px 64px;
+  background: $bgc-glay-grad;
+  color: $fc-black;
+  @include sp{
+    padding: 24px 20px;
+  }
+}
+.exam__cont{
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
+  @include tab{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include sp{
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 32px;
+    gap: 20px;
+  }
+}
+.exam__card{
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+}
+.exam__card-img{
+  width: 100%;
+}
+.exam__card-text{
+  padding: 12px 20px;
+}
+.exam__card-ttl{
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.exam__card-caption{
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
   color: $pc-red;
   font-weight: 600;
-  margin-bottom: 24px;
-  @include sp{
-    font-size: 16px;
-    margin-bottom: 16px;
-  }
+  margin-bottom: 16px;
 }
 .exam__issue-ttl{
   margin-bottom: 8px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
 }
 .exam__issue-list{
   color: $fc-l-black;
@@ -268,34 +341,39 @@
   }
   li{
     margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: 0.02em;
   }
   img{
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     vertical-align: bottom;
     margin-right: 8px;
-    @include sp{
-      width: 24px;
-      height: 24px;
-    }
   }
 }
 .exam__result-ttl{
   margin-bottom: 8px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
 }
 .exam__result-list{
   li{
     margin-bottom: 8px;
     color: $fc-l-black;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    span{
+      font-weight: bold;
+      font-size: 16px;
+      color: $pc-red;
+    }
+
     img{
-      width: 32px;
-      height: 32px;
+      width: 24px;
+      height: 24px;
       margin-right: 8px;
       vertical-align: bottom;
-      @include sp{
-        width: 24px;
-        height: 24px;
-      }
     }
   }
 }
@@ -305,61 +383,64 @@
   justify-content: center;
   @include sp{
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 16px;
   }
 }
 // example end
 
 // plan
 .plan{
-  padding: 48px 5% 64px;
+  padding: 48px 40px 64px;
   background: $bgc-orange-grad;
   position: relative;
+  @include sp{
+    padding: 24px 20px;
+  }
 }
 .plan__caption{
-  max-width: 50%;
-  margin-bottom: 32px;
+  max-width: 800px;
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 2;
+  color: $fc-l-black;
+  margin: 0 auto 40px;
   @include tab{
     max-width: 100%;
     margin-bottom: 24px;
-  }
-  span{
-    font-size: 20px;
-    color: $pc-red;
-    display: block;
-    @include sp{
-      font-size: 16px;
-    }
+    font-size: 14px;
   }
 }
 .plan__card-cont{
-  margin-bottom: 48px;
+  margin-bottom: 64px;
   @include tab{
-    margin-bottom: 24px;
+    margin-bottom: 40px;
   }
 }
-.plan__annotation{
-  color: $fc-white;
-  background-color: $pc-red;
-  border-radius: 100%;
-  width: 300px;
-  text-align: center;
-  padding: 48px;
+.plan__card{
+  position: relative;
+}
+.plan__label{
   position: absolute;
-  right: 104px;
-  top: 48px;
-  @include tab{
-    top: 32px;
-    right: 5%;
-  }
-  @include sp{
-    display: none;
-  }
+  top: 0;
+  left: -12px;
+  color: #fff;
+  background-color: $pc-red;
+  padding: 8px 12px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  transform: rotate(-15deg);
 }
 .plan__card-ttl{
   font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-bottom: 8px;
   text-align: center;
+  @include sp{
+    font-size: 16px;
+  }
 }
 .plan__card-price{
   font-weight: bold;
@@ -367,55 +448,184 @@
   color: $pc-red;
   margin-bottom: 8px;
   text-align: center;
+  @include sp{
+    font-size: 16px;
+  }
 }
 .plan__card-for{
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: $fc-l-black;
+  letter-spacing: 0.02em;
+  font-size: 14px;
 }
 .plan__function-ttl{
   margin-bottom: 8px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
 }
 .plan__function-list{
   li{
     margin-bottom: 8px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    @include sp{
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+    }
     .fas{
-      font-size: 32px;
+      font-size: 24px;
       margin-right: 8px;
       color: $pc-red;
       vertical-align: bottom;
       @include sp{
-        font-size: 24px;
+        font-size: 16px;
       }
     }
   }
 }
-.plan__btn{
+.comparison{
+  margin-bottom: 40px;
+  @include sp{
+    margin-bottom: 24px;
+  }
+}
+
+.comp__ttl{
+  font-size: 24px;
+  padding-left: 16px;
+  margin-bottom: 40px;
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(180deg, #A52A2A 0%, #DC6343 100%);
+  border-image-slice: 1; 
+  @include tab{
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  @include sp{
+    margin-bottom: 24px;
+  }
+}
+.comp__table{
+  width: 100%;
+  border: none;
+  .comp__head-none{
+    border: none;
+  }
+  th, td{
+    text-align: center;
+    padding: 12px;
+    vertical-align: middle;
+    border: none;
+    font-size: 16px;
+    @include sp{
+      padding: 12px 8px;
+      font-size: 12px;
+    }
+  }
+  th{
+    padding: 16px;
+    @include sp{
+      padding: 16px 8px;
+    }
+  }
+  td{
+    img{
+      width: 32px;
+      height: 32px;
+      @include sp{
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  thead{
+    th{
+      &:nth-child(3){
+        border: 2px solid $pc-red;
+      }
+    }
+  }
+  tbody{
+    td{
+      &:nth-child(2){
+        border-left: 1px solid #eee;
+      }
+      &:nth-child(3){
+        border-left: 2px solid $pc-red;
+        border-right: 2px solid $pc-red;
+      }
+    }
+    .bb-red{
+      border-bottom: 2px solid $pc-red;
+    }
+  }
+}
+
+
+.comp__head-light{
+  background-color: #f7f7f7;
+}
+.comp__head-standard{
+  background-color: $pc-red;
+  color: $fc-white;
+}
+.comp__head-pro{
+  background-color: #f7f7f7;
+}
+.comp__table-row--orange{
+  background-color:#f7f7f7;
+}
+.comp__table-row--white{
+  background-color: $bgc-white;
+}
+
+.plan__banner-cont{
   margin: 0 auto;
+  max-width: 400px;
+  img{
+    width: 100%;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
 }
 // plan end
 
 // question
 .question{
-  padding: 48px 5% 64px;
+  padding: 48px 40px 64px;
   background: $bgc-glay-grad;
+  @include sp{
+    padding: 24px 20px;
+  }
 }
 .ques__card{
+  max-width: 1000px;
   padding: 24px;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
   background-color: $bgc-white;
-  margin-bottom: 32px;
+  margin: 0 auto 24px;
   border: 1px solid $bgc-glay;
   position: relative;
+  transition: all 0.3s ease-in-out;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  @include tab{
+    padding: 16px 20px;
+  }
   @include sp{
-    padding: 24px 16px;
+    padding: 16px;
   }
 }
 .ques__card-upper{
   display: flex;
-  gap: 16px;
-  margin-bottom: 16px;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: top;
+  transition: all 0.3s ease-in-out;
   @include sp{
     margin-bottom: 0;
     gap: 8px;
@@ -423,28 +633,36 @@
 }
 .ques__card-ttl{
   font-size: 16px;
+  @include sp{
+    font-size: 14px;
+  }
 }
 .ques__card-number{
   font-size: 20px;
   color: $pc-red;
   font-weight: bold;
   @include sp{
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .ques__card-ttl{
   @include sp{
-    width: 70%;
+    width: 65%;
   }
 }
 .ques__card-answer{
   color: $fc-l-black;
+  @include sp{
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 2;
+  }
 }
 .ques__card-btn{
-  top: 16px;
+  top: 12px;
   right: 16px;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   background-color:$pc-red;
   border-radius: 50%;
   display: flex;
@@ -469,16 +687,16 @@
 
 .ques__card-btn::before {
   width: 60%;
-  height: 3px;
-  top: 21px;
-  left: 9px;
+  height: 2px;
+  top: 19px;
+  left: 8px;
 }
 
 .ques__card-btn::after {
-  width: 3px;
+  width: 2px;
   height: 60%;
-  top:  9px;
-  left: 21px;
+  top:  8px;
+  left: 19px;
 }
 
 .turn.ques__card-btn::before,
@@ -497,6 +715,12 @@
     opacity: 0;
     margin-top: 8px;
     gap: 8px;
+  }
+  img{
+    width: 24px;
+    @include sp{
+      width: 16px;
+    }
   }
 }
 .ques__card-lower.show{

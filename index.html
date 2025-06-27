@@ -36,11 +36,11 @@
                     <span class="menu-label">Menu</span>
                 </button>
                 <ul class="header__nav-links">
-                    <li><a href="./html/service.html">サービス詳細</a></li>
+                    <li><a href="./index.html#service">サービス詳細</a></li>
                     <li><a href="./index.html#example">導入事例</a></li>
-                    <li><a href="./html/plan.html">料金プラン</a></li>
+                    <li><a href="./index.html#plan">料金プラン</a></li>
                     <li><a href="./index.html#question">よくある質問</a></li>
-                    <li><a href="./html/contact.html">お問い合わせ</a></li>
+                    <li><a class="primary-btn02" href="./html/contact.html">お問い合わせ</a></li>
                 </ul>
             </nav>
         </div>
@@ -49,120 +49,203 @@
      <!-- mv -->
      <section class="mainvisual fadein">
         <div class="inner--large">
-            <div class="mv__inner">
-                <div class="mv__cont">
+            <div class="mv__cont">
+                <div class="mv__cont-text">
                     <h2 class="mv__ttl">スマートなオーダー管理で、飲食店の未来を創る。</h2>
-                    <p class="mv__caption">低コストで手軽に導入。オーダーの効率化で、サービスの質も、売り上げもアップ。</p>
+                    <p class="mv__caption">
+                        SmartOrdeeはQRコードを読み取るだけで注文できる、次世代オーダーシステム。
+                        低コストで手軽に導入可能で、人手不足対策・オーダーミス削減、回転率UPを実現します!
+                    </p>
                     <div class="mv__btn-cont">
                         <a href="./html/contact.html" class="primary-btn">無料トライアルを始める</a>
                         <a href="./html/contact.html" class="secondary-btn">資料請求はこちら</a>
                     </div>
                 </div>
+                <div class="mv__cont-img">
+                    <img src="./images/SmartOrdee_UI.png" alt="アプリケーションUI">
+                </div>
             </div>
         </div>
      </section>
      <!-- mv end -->
-      <!-- service -->
-       <section class="service scroll-fadein">
+     <!-- worry -->
+      <section class="worry">
         <div class="inner--large">
-            <h2 class="section-ttl--01">Service<span>サービス詳細</span></h2>
-            <div class="serv__cont">
-                <div class="serv__text">
-                    <p class="serv__caption">「注文をもっとスムーズに、業務をもっと効率的に。」Smart Ordee は、飲食店向けのスマートオーダーシステム。簡単導入・低コスト・業務効率化 を実現し、スタッフの負担を減らしながら、より良いサービスを提供できます。</p>
-                    <a href="./html/service.html" class="secondary-btn">サービス詳細へ</a>
+            <h2 class="sec-ttl">飲食店の運営でこんなお悩みありませんか？</h2>
+            <div class="worry__cont">
+                <div class="worry__img scroll-fadein"><img src="./images/worry.png" alt=""></div>
+                <div class="worry__text scroll-fadein">
+                    <ul class="worry__list">
+                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン"><span class="worry__list-text">忙しい時間帯に注文が重なり、ホールが回らない</span></li>
+                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン"><span class="worry__list-text">スタッフ不足で接客が追いつかないことがある</span></li>
+                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン"><span class="worry__list-text">注文の聞き間違えや伝達ミスが多い</span></li>
+                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン"><span class="worry__list-text">メニュー変更や価格改定のたびに紙の印刷コストや手間がかかる</span></li>
+                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン"><span class="worry__list-text">注文状況をリアルタイムで把握できず、混乱する</span></li>
+                    </ul>
+                    <p class="worry__message">
+                        その悩み、SmartOrdeeなら<span>全て解決</span>できます！
+                    </p>
                 </div>
-                <ul class="serv__list">
-                    <li><i class="fas fa-check-square"></i><span>QRコードオーダー</span>お客様がスマホで簡単に注文</li>
-                    <li><i class="fas fa-check-square"></i><span>タブレットオーダー</span>テーブルに設置し、注文の取りこぼしを防ぐ</li>
-                    <li><i class="fas fa-check-square"></i><span>POS連携</span>既存のレジシステムとシームレスに統合</li>
-                    <li><i class="fas fa-check-square"></i><span>在庫管理</span>売上と連動し、リアルタイムで在庫確認</li>
-                    <li><i class="fas fa-check-square"></i><span>売上分析</span>人気メニューやピークタイムをデータで可視化</li>
-                </ul>
+                
             </div>
-            <a href="./html/service.html" class="secondary-btn pc-none">サービス詳細へ</a>
+        </div>
+      </section>
+     <!-- worry end -->
+      <!-- service -->
+       <section class="service" id="service">
+        <div class="inner--large">
+            <h2 class="sec-ttl mb24">SmartOrdeeとは？</h2>
+            <p class="ser__desc">
+                SmartOrdeeは、セルフオーダー・キッチン連携・POS連携・売上管理といった飲食店の業務を一元化する基本機能を備え、効率的な店舗運営をサポートします。
+            </p>
+            <div class="ser__card-cont">
+                <div class="ser__card scroll-fadein">
+                    <img src="./images/mobile_hand.svg" alt="モバイルアイコン">
+                    <h3 class="ser__card-ttl">セルフオーダー機能</h3>
+                    <p class="ser__card-text">
+                        お客様自身のスマートフォンから注文できるQRコードオーダーにより、注文ミスや待ち時間を削減し、接客コストを最小限に。
+                    </p>
+                </div>
+                <div class="ser__card scroll-fadein">
+                    <img src="./images/skillet.svg" alt="調理アイコン">
+                    <h3 class="ser__card-ttl">キッチンモニターとの連動</h3>
+                    <p class="ser__card-text">
+                        注文情報はリアルタイムでキッチンに共有され、調理オペレーションのスムーズ化とミスの防止を実現します。
+                    </p>
+                </div>
+                <div class="ser__card scroll-fadein">
+                    <img src="./images/currency_yen.svg" alt="通貨アイコン">
+                    <h3 class="ser__card-ttl">POSレジ連携</h3>
+                    <p class="ser__card-text">
+                        既存のレジシステムと連携し、注文・会計の一元管理が可能に。導入の手間を抑えつつ、業務の自動化を推進します。
+                    </p>
+                </div>
+                <div class="ser__card scroll-fadein">
+                    <img src="./images/bar_chart.svg" alt="チャートアイコン">
+                    <h3 class="ser__card-ttl">売上管理</h3>
+                    <p class="ser__card-text">
+                        注文履歴や売上データを自動で集計し、日別・商品別などの分析も可能。経営判断に役立つデータをいつでも確認できます。
+                    </p>
+                </div>
+            </div>
         </div>
        </section>
       <!-- service end -->
-       <!-- feature -->
-       <section class="feature scroll-fadein">
+       <!-- select -->
+       <section class="select scroll-fadein">
         <div class="inner--large">
-            <h2 class="section-ttl--01">Feature<span>サービスの特徴</span></h2>
-            <div class="fea__cont">
-                <div class="fea__text">
-                    <p class="fea__caption">「飲食店の業務をもっとスムーズに、スタッフの負担をもっと軽く。」Smart Ordeeは、低コスト・簡単導入・直感的な操作 で、飲食店の業務効率化を実現するスマートオーダーシステムです。</p>
-                    <a href="./html/service.html" class="secondary-btn">サービス詳細へ</a>
+            <h2 class="sec-ttl">SmartOrdeeが選ばれる理由</h2>
+            <div class="sele__cont">
+                <div class="sele__card scroll-fadein">
+                    <span class="sele__card-number">01</span>
+                    <h3 class="sele__card-ttl">注文ミス・クレームを削減</h3>
+                    <p class="sele__card-text">
+                        お客様が自分のスマホから直接注文するため、スタッフの聞き間違いやメモの書き間違いといったミスを防げます。
+                        注文内容はお客様と店舗の両方で確認できるので、「頼んだ」「頼んでない」の行き違いも起きにくく、クレーム対応の手間が大幅に減ります。
+                    </p>
                 </div>
-                <ul class="fea__list">
-                    <li><i class="fas fa-check-square"></i><span>簡単導入</span>初期設定不要、QRコードを設置するだけ</li>
-                    <li><i class="fas fa-check-square"></i><span>低コストで導入</span>必要な機能だけを選べる柔軟なプラン</li>
-                    <li><i class="fas fa-check-square"></i><span>スタッフの負担軽減</span>注文の自動化で業務効率アップ</li>
-                    <li><i class="fas fa-check-square"></i><span>オーダーミス削減</span>デジタル注文で聞き間違いやミスを防止</li>
-                    <li><i class="fas fa-check-square"></i><span>リアルタイム売上分析</span>データを活用して、売上向上</li>
-                </ul>
+                <div class="sele__card scroll-fadein">
+                    <span class="sele__card-number">02</span>
+                    <h3 class="sele__card-ttl">ホール業務を効率化</h3>
+                    <p class="sele__card-text">
+                        スタッフの注文対応が不要になり、少人数でもスムーズな接客と運営が可能に。また、メニューの変更や売り切れ等も即時に対応可能。
+                    </p>
+                </div>
+                <div class="sele__card scroll-fadein">
+                    <span class="sele__card-number">03</span>
+                    <h3 class="sele__card-ttl">売上アップに貢献</h3>
+                    <p class="sele__card-text">
+                        お客様が自分のタイミングで注文できるため、追加注文のハードルが大きく下がります。
+                        スタッフが忙しそうな時でも気兼ねなく頼めることで、注文機会の取りこぼしを防止。
+                        さらに、ホール業務の一部を自動化することで人件費の削減にもつながり、利益率の改善にも貢献します。
+                    </p>
+                </div>
+                <div class="sele__card scroll-fadein">
+                    <span class="sele__card-number">04</span>
+                    <h3 class="sele__card-ttl">メニュー分析が可能</h3>
+                    <p class="sele__card-text">
+                        SmartOrdeeでは、注文データが自動で蓄積され、日別・時間帯別・メニュー別に売上を可視化できます。
+                        感覚ではなくデータに基づいた判断ができるため、人気メニューの強化や不人気商品の見直しなど、次の一手が立てやすくなります。
+                    </p>
+                </div>
+                <div class="sele__card scroll-fadein">
+                    <span class="sele__card-number">05</span>
+                    <h3 class="sele__card-ttl">低コストで簡単に導入可能</h3>
+                    <p class="sele__card-text">
+                        専用端末不要で、QRコード運用だから初期コストも抑えられ、スモールスタートに最適。また、既存のPOSレジやキッチン環境ともスムーズに連携可能。すぐに現場に導入できます。
+                    </p>
+                </div>
+                <div class="sele__card scroll-fadein">
+                    <span class="sele__card-number">06</span>
+                    <h3 class="sele__card-ttl">誰でも迷わず使える操作画面</h3>
+                    <p class="sele__card-text">
+                        既存の注文アプリを複数分析し、「操作がわかりにくい」「スタッフに質問が集中する」といった課題をひとつひとつ洗い出すところから始まりました。
+                        誰でも直感的に使えて、迷わず注文できる。飲食店の現場とお客様、両方の使いやすさを追求した画面設計です。
+                    </p>
+                </div>
             </div>
-            <a href="./html/service.html" class="secondary-btn pc-none">サービス詳細へ</a>
         </div>
        </section>
-      <!-- feature end -->
+       <!-- select end -->
        
       <!-- example -->
        <section class="example" id="example">
         <div class="inner--large">
-            <h2 class="section-ttl--01 scroll-fadein">Example<span>導入事例</span></h2>
-            <div class="exam__card scroll-fadein">
-                <div class="exam__img"><img src="./images/shunsai.webp" alt="店内写真"></div>
-                <div class="exam__text">
-                    <h3 class="exam__card-ttl">和食ダイニング旬彩<span>20席</span></h3>
-                    <p class="exam__card-caption">「注文の手間が減り、スタッフが接客に集中できるようになりました！」</p>
-                    <h4 class="exam__issue-ttl">導入前の課題</h4>
-                    <ul class="exam__issue-list">
-                        <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズボタン">ピーク時の注文対応に時間がかかり、お客様を待たせてしまう</li>
-                        <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズボタン">スタッフの負担が大きく、接客の質にムラが出る</li>
-                    </ul>
-                    <h4 class="exam__result-ttl">導入後の効果</h4>
-                    <ul class="exam__result-list">
-                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">注文対応の時間が<span>40%</span>減少！</li>
-                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">スタッフの業務負担が軽減し、接客クオリティが向上！</li>
-                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">追加注文率が<span>18%</span>アップ！</li>
-                    </ul>
+            <h2 class="sec-ttl">導入事例</h2>
+            <div class="exam__cont">
+                <div class="exam__card scroll-fadein">
+                    <img src="./images/Syunsai.png" alt="旬彩店舗写真" class="exam__card-img">
+                    <div class="exam__card-text">
+                        <p class="exam__card-caption">「注文の手間が減り、スタッフが接客に集中できるようになりました！」</p>
+                        <h3 class="exam__issue-ttl">導入前の課題</h3>
+                        <ul class="exam__issue-list">
+                            <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズボタン">ピーク時の注文対応に時間がかかり、お客様を待たせてしまう</li>
+                            <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズボタン">スタッフの負担が大きく、接客の質にムラが出る</li>
+                        </ul>
+                        <h3 class="exam__result-ttl">導入後の効果</h3>
+                        <ul class="exam__result-list">
+                            <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">注文対応の時間が<span>40%</span>減少！</li>
+                            <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">スタッフの業務負担が軽減し、接客クオリティが向上！</li>
+                            <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">追加注文率が<span>18%</span>アップ！</li>
+                        </ul>
+                    </div>
                 </div>
-            </div><!-- exam__card -->
-            <div class="exam__card scroll-fadein">
-                <div class="exam__img"><img src="./images/itarian.webp" alt="店内写真"></div>
-                <div class="exam__text">
-                    <h3 class="exam__card-ttl">イタリアンTrattoria Felice<span>25席</span></h3>
-                    <p class="exam__card-caption">「注文の手間が減り、スタッフが接客に集中できるようになりました！」</p>
-                    <h4 class="exam__issue-ttl">導入前の課題</h4>
-                    <ul class="exam__issue-list">
-                        <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズアイコン">追加注文をスタッフが聞きに行くのに時間がかかる</li>
-                        <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズアイコン">ワインやデザートの注文率が低め</li>
-                    </ul>
-                    <h4 class="exam__result-ttl">導入後の効果</h4>
-                    <ul class="exam__result-list">
-                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">オーダーミスが<span>88%</span>減少！</li>
-                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">注文から提供までの時間が<span>25%</span>改善！</li>
-                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">ワイン・デザートの追加注文率が<span>23%</span>アップ！</li>
-                    </ul>
+                <div class="exam__card scroll-fadein">
+                    <img src="./images/Cafe.png" alt="カフェ店舗写真" class="exam__card-img">
+                    <div class="exam__card-text">
+                        <p class="exam__card-caption">「混雑時でもスムーズなオペレーションが可能に！」</p>
+                        <h3 class="exam__issue-ttl">導入前の課題</h3>
+                        <ul class="exam__issue-list">
+                            <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズボタン">追加注文がスムーズに行われずに、売上機会を逃す</li>
+                            <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズボタン">スタッフの負担が大きく、接客の質にムラが出る</li>
+                        </ul>
+                        <h3 class="exam__result-ttl">導入後の効果</h3>
+                        <ul class="exam__result-list">
+                            <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">オーダーミスが<span>86%</span>減少！</li>
+                            <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">追加注文率が<span>18%</span>アップ！</li>
+                            <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">月の平均売り上げが<span>12%</span>アップ！</li>
+                        </ul>
+                    </div>
                 </div>
-            </div><!-- exam__card -->
-            <div class="exam__card scroll-fadein">
-                <div class="exam__img"><img src="./images/cafe.webp" alt="店内写真"></div>
-                <div class="exam__text">
-                    <h3 class="exam__card-ttl">カフェ＆バー「Round Eight」<span>20席</span></h3>
-                    <p class="exam__card-caption">「混雑時でもスムーズなオペレーションが可能に！」</p>
-                    <h4 class="exam__issue-ttl">導入前の課題</h4>
-                    <ul class="exam__issue-list">
-                        <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズボタン">追加注文がスムーズに行われずに、売上機会を逃す</li>
-                        <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズボタン">オーダーミスが発生し、クレームが増加</li>
-                    </ul>
-                    <h4 class="exam__result-ttl">導入後の効果</h4>
-                    <ul class="exam__result-list">
-                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">オーダーミスが<span>86%</span>減少！</li>
-                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">追加注文率が<span>18%</span>アップ！</li>
-                        <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">月の平均売り上げが<span>12%</span>アップ！</li>
-                    </ul>
+                <div class="exam__card scroll-fadein">
+                    <img src="./images/Itarian.png" alt="イタリアン店舗写真" class="exam__card-img">
+                    <div class="exam__card-text">
+                        <p class="exam__card-caption">「注文だけでなく、キッチンとの連動もスムーズに！」</p>
+                        <h3 class="exam__issue-ttl">導入前の課題</h3>
+                        <ul class="exam__issue-list">
+                            <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズボタン">追加注文をスタッフが聞きに行くのに時間がかかる</li>
+                            <li><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="クローズボタン">ワインやデザートの注文率が低め</li>
+                        </ul>
+                        <h3 class="exam__result-ttl">導入後の効果</h3>
+                        <ul class="exam__result-list">
+                            <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">オーダーミスが<span>88%</span>減少！</li>
+                            <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">注文から提供までの時間が<span>25%</span>改善！</li>
+                            <li><img src="./images/check_box_64dp_363636_FILL0_wght400_GRAD0_opsz48.svg" alt="チェックアイコン">ワイン・デザートの追加注文率が<span>23%</span>アップ！</li>
+                        </ul>
+                    </div>
                 </div>
-            </div><!-- exam__card -->
+            </div>
+            
             <div class="exam__btn-cont scroll-fadein">
                 <a href="./html/contact.html" class="primary-btn">無料トライアルを始める</a>
                 <a href="./html/contact.html" class="secondary-btn">資料請求はこちら</a>
@@ -171,56 +254,129 @@
        </section>
       <!-- example end -->
        <!-- plan -->
-       <section class="plan">
+       <section class="plan" id="plan">
         <div class="inner--large">
-            <h2 class="section-ttl--01 scroll-fadein">Plan<span>料金プラン</span></h2>
-            <p class="plan__caption scroll-fadein"><span>「必要な機能だけを選んで、最適なコストで導入」</span>Smart Ordeeは、小規模店舗から中規模店舗まで 幅広く対応できる、シンプルでわかりやすい料金プランを提供しています。初期費用ゼロ・月額定額制 だから、導入も安心。</p>
-            <p class="plan__annotation scroll-fadein">現在無料トライアル実施中<br>初月料金が無料に！</p>
+            <h2 class="sec-ttl mb24">料金プラン</h2>
+            <p class="plan__caption scroll-fadein">Smart Ordeeは、小規模店舗から中規模店舗まで 幅広く対応できる、シンプルでわかりやすい料金プランを提供しています。初期費用ゼロ・月額定額制 だから導入も安心。必要な機能だけ選んで、最適なコストで導入可能！</p>
+            
             <div class="card-cont plan__card-cont">
                 <div class="card plan__card scroll-fadein">
                     <h3 class="plan__card-ttl">ライトプラン</h3>
-                    <p class="plan__card-price">￥4980円 / 月</p>
+                    <p class="plan__card-price">￥4980円（税込）/ 月</p>
                     <p class="plan__card-for">小規模店舗・カフェ向け</p>
                     <p class="plan__function-ttl">主な機能</p>
                     <ul class="plan__function-list">
                         <li><i class="fas fa-check-square"></i>QRコードオーダー</li>
-                        <li><i class="fas fa-check-square"></i>タブレットオーダー</li>
-                        <li><i class="fas fa-check-square"></i>注文履歴管理</li>
+                        <li><i class="fas fa-check-square"></i>キッチンモニターとの連動</li>
+                        <li><i class="fas fa-check-square"></i>メニュー管理</li>
                     </ul>
                 </div>
                 <div class="card plan__card scroll-fadein">
+                    <span class="plan__label">1番人気</span>
                     <h3 class="plan__card-ttl">スタンダードプラン</h3>
-                    <p class="plan__card-price">￥9800円 / 月</p>
+                    <p class="plan__card-price">￥9800円（税込）/ 月</p>
                     <p class="plan__card-for">個人経営レストラン・居酒屋</p>
                     <p class="plan__function-ttl">主な機能</p>
                     <ul class="plan__function-list">
                         <li><i class="fas fa-check-square"></i>ライトプランの全機能</li>
                         <li><i class="fas fa-check-square"></i>POSレジ連携</li>
-                        <li><i class="fas fa-check-square"></i>メニューのリアルタイム更新</li>
-                        <li><i class="fas fa-check-square"></i>在庫管理機能</li>
+                        <li><i class="fas fa-check-square"></i>売上レポート</li>
+                        <li><i class="fas fa-check-square"></i>人気メニュー分析</li>
                     </ul>
                 </div>
                 <div class="card plan__card scroll-fadein">
                     <h3 class="plan__card-ttl">プロプラン</h3>
-                    <p class="plan__card-price">￥14800 / 月</p>
+                    <p class="plan__card-price">￥14800（税込）/ 月</p>
                     <p class="plan__card-for">チェーン店・複数店舗経営者向け</p>
                     <p class="plan__function-ttl">主な機能</p>
                     <ul class="plan__function-list">
                         <li><i class="fas fa-check-square"></i>スタンダードプランの全機能</li>
                         <li><i class="fas fa-check-square"></i>多店舗管理</li>
-                        <li><i class="fas fa-check-square"></i>売上分析レポート</li>
+                        <li><i class="fas fa-check-square"></i>導入サポート</li>
                         <li><i class="fas fa-check-square"></i>カスタマーサポート優先対応</li>
                     </ul>
                 </div>
             </div>
-            <a href="./html/plan.html" class="secondary-btn plan__btn scroll-fadein">料金プラン詳細へ</a>
+
+            <section class="comparison">
+                <h3 class="comp__ttl scroll-fadein">各プランの機能一覧</h3>
+                <table class="comp__table scroll-fadein">
+                    <thead class="comp__table-head">
+                        <tr>
+                            <th class="comp__head-none"></th>
+                            <th class="comp__head-light">ライトプラン</th>
+                            <th class="comp__head-standard">スタンダードプラン</th>
+                            <th class="comp__head-pro">プロプラン</th>
+                        </tr>
+                    </thead>
+                    <tbody class="comp__table-body">
+                        <tr class="comp__table-row--white">
+                            <td>メニュー管理（登録・更新）</td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                        </tr>
+                        <tr class="comp__table-row--orange">
+                            <td>QRコードオーダー</td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                        </tr>
+                        <tr class="comp__table-row--white">
+                            <td>キッチンモニターとの連動</td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                        </tr>
+                        <tr class="comp__table-row--orange">
+                            <td>POSレジ連携</td>
+                            <td><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="バツ"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                        </tr>
+                        <tr class="comp__table-row--white">
+                            <td>人気メニュー分析</td>
+                            <td><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="バツ"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                        </tr>
+                        <tr class="comp__table-row--orange">
+                        <td>売上レポート</td>
+                            <td><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="バツ"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                        </tr>
+                        <tr class="comp__table-row--white">
+                            <td>多店舗管理</td>
+                            <td><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="バツ"></td>
+                            <td><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="バツ"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                        </tr>
+                        <tr class="comp__table-row--orange">
+                            <td>導入サポート</td>
+                            <td><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="バツ"></td>
+                            <td><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="バツ"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                        </tr>
+                        <tr class="comp__table-row--white">
+                            <td>カスタマーサポート優先対応</td>
+                            <td><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="バツ"></td>
+                            <td class="bb-red"><img src="./images/close_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="バツ"></td>
+                            <td><img src="./images/circle_64dp_A52A2A_FILL0_wght400_GRAD0_opsz48.svg" alt="マル"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div class="plan__banner-cont">
+                <img src="./images/free_trial.png" alt="初月無料 無料トライアル実施中">
+            </div>
         </div>
        </section>
        <!-- plan end -->
         <!-- question -->
          <section class="question" id="question">
             <div class="inner--large">
-                <h2 class="section-ttl--01 scroll-fadein">Question<span>よくある質問</span></h2>
+                <h2 class="sec-ttl scroll-fadein">よくある質問</h2>
                 <div class="ques__card scroll-fadein">
                     <div class="ques__card-upper">
                         <span class="ques__card-number">Q1.</span>
@@ -265,10 +421,6 @@
                         <p class="ques__card-answer">導入前に、Smart Ordeeの機能を実際にお試しいただけます。トライアル期間終了後も、必要なプランを選んでスムーズに継続利用できます。</p>
                     </div>
                 </div><!-- ques__card end -->
-                <div class="ques__btn-cont scroll-fadein">
-                    <a href="./html/contact.html" class="primary-btn">無料トライアルを始める</a>
-                    <a href="./html/contact.html" class="secondary-btn">資料請求をする</a>
-                </div>
             </div>
          </section>
         <!-- question end -->
@@ -276,7 +428,7 @@
           <section class="cta-section">
             <div class="inner--large">
                 <h2 class="cta__ttl scroll-fadein">Smart Ordeeを導入して、オーダー管理をもっとスマートに</h2>
-                <p class="cta__caption scroll-fadein">飲食店の業務効率を向上させ、スタッフの負担を軽減し、売上アップを実現。初期費用ゼロ・無料トライアル（利用開始から１ヶ月間無料）ありなので、安心して導入できます。</p>
+                <p class="cta__caption scroll-fadein">飲食店の業務効率を向上させ、スタッフの負担を軽減し、売上アップを実現。初期費用ゼロ・無料トライアル（利用開始から１ヶ月間無料）実施中なので、安心して導入できます。</p>
                 <div class="cta__btn-cont scroll-fadein">
                     <a href="./html/contact.html" class="primary-btn">無料トライアルを始める</a>
                     <a href="./html/contact.html" class="secondary-btn">資料請求をする</a>
@@ -285,20 +437,20 @@
           </section>
          <!-- cta-section end -->
           <!-- footer -->
-           <footer class="footer scroll-fadein">
+           <footer class="footer">
             <div class="inner--large">
                 <div class="footer__cont">
                     <div class="footer__menu">
-                        <h1 class="footer__logo"><a href=""><img src="./images/logo-white.svg" alt="Smart Ordee"></a></h1>
+                        <h2 class="footer__logo"><a href=""><img src="./images/logo-white.svg" alt="Smart Ordee"></a></h2>
                         <p class="footer__caption">スマートなオーダー管理で、飲食店の未来を創る。</p>
                     </div>
                     <div class="footer__menu">
                         <h2 class="footer__menu-ttl">About</h2>
                         <nav class="footer__nav-list">
                             <ul>
-                                <li><a href="./html/service.html">サービス詳細</a></li>
-                                <li><a href="./index.html#exmple">導入事例</a></li>
-                                <li><a href="./html/plan.html">料金プラン</a></li>
+                                <li><a href="./index.html#service">サービス詳細</a></li>
+                                <li><a href="./index.html#example">導入事例</a></li>
+                                <li><a href="./index.html#price">料金プラン</a></li>
                                 <li><a href="./index.html#question">よくある質問</a></li>
                                 <li><a href="./html/contact.html">お問い合わせ</a></li>
                             </ul>
@@ -317,6 +469,9 @@
                         </nav>
                     </div>
                 </div>
+                <p class="footer__copy">
+                    ©2025 SmartOrdee. All right reserved.
+                </p>
             </div>
            </footer>
           <!-- footer end -->

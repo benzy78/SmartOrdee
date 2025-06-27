@@ -209,76 +209,6 @@
   }
 }
 
-.comparison{
-  padding: 48px 5% 64px;
-  background: $bgc-orange-grad;
-}
-.comp__table{
-  width: 100%;
-  th, td{
-    text-align: center;
-    padding: 16px;
-    vertical-align: middle;
-    border: 1px solid $bgc-white;
-    @include sp{
-      padding: 16px 8px;
-      font-size: 14px;
-    }
-  }
-  th{
-    padding: 24px;
-    @include sp{
-      padding: 16px 8px;
-    }
-  }
-  td{
-    img{
-      width: 32px;
-      height: 32px;
-      @include sp{
-        width: 24px;
-        height: 24px;
-      }
-    }
-  }
-  thead{
-    th{
-      &:nth-child(3){
-        border: 2px solid $sc-orange;
-      }
-    }
-  }
-  tbody{
-    td{
-      &:nth-child(3){
-        border-left: 2px solid $sc-orange;
-        border-right: 2px solid $sc-orange;
-      }
-    }
-    .bb-orange{
-      border-bottom: 2px solid $sc-orange;
-    }
-  }
-}
-
-
-.comp__head-light{
-  background-color: $bgc-orange;
-}
-.comp__head-standard{
-  background-color: $sc-orange;
-  color: $fc-white;
-}
-.comp__head-pro{
-  background-color: $pc-red;
-  color: $fc-white;
-}
-.comp__table-row--orange{
-  background-color: $bgc-orange;
-}
-.comp__table-row--white{
-  background-color: $bgc-white;
-}
 
 
 .selection{
@@ -518,4 +448,34 @@ button {
   }
 }
 
+.contact__desc{
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 2;
+  color: $fc-l-black;
+}
+
+.contact__btn{
+  text-align: center;
+  font-size: 16px;
+  line-height: 1;
+  padding: 20px 32px;
+  background:$pc-red;
+  color: $fc-white;
+  border-radius: 100px;
+  font-weight: 500;
+  display: block;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: $hover-red;
+  }
+  @include sp{
+    max-width: 100%;
+    padding: 16px 8px;
+  }
+}
 // contact end

@@ -2,33 +2,53 @@
     footer
 */
 .footer{
-    padding: 48px 5% 64px;
-    background: $pc-grad;
+    padding: 48px 40px 64px;
+    background-color: #421111;
     color: $fc-white;
+    @include sp{
+        padding: 24px 20px;
+    }
 }
 .footer__cont{
-    display: flex;
-    justify-content: space-between;
-    gap: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+    margin-bottom: 40px;
+
+    @include tab{
+        gap: 40px;
+    }
     @include sp{
-        flex-wrap: wrap;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
     }
 }
 .footer__menu{
-    width: 33.3%;
-    @include sp{
-        width: 100%;
-    }
 }
 .footer__logo{
     img{
         width: 200px;
         height: auto;
+        @include tab{
+            width: 160px;
+        }
+    }
+}
+.footer__caption{
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 2;
+    @include tab{
+        font-size: 14px;
     }
 }
 .footer__menu-ttl{
     margin-bottom: 16px;
     font-size: 20px;
+    letter-spacing: 0.02em;
+    @include sp{
+        font-size: 16px;
+    }
 }
 .footer__nav-list{
     margin-left: 24px;
@@ -36,12 +56,19 @@
         margin-bottom: 16px;
         a{
             color: $fc-white;
+            padding: 8px;
+            font-size: 14px;
             transition: all 0.3s ease-in-out;
             &:hover{
                 color: $sc-orange;
             }
         }
     }
+}
+.footer__copy{
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 /*
     footer end
