@@ -207,11 +207,11 @@ input {
 			&::after {
 				position: absolute;
 				content: "";
-				top: 50%;
+				top: 43%;
 				left: 0;
 				transform: translateY(-50%) rotate(-45deg);
-				width: 1em;
-				height: 0.6em;
+				width: 1.5em;
+				height: 0.8em;
 				margin-top: -0.2em;
 				display: block;
 				border-left: 3px solid $pc-red;
