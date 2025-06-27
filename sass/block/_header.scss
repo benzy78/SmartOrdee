@@ -35,6 +35,9 @@
         width: 170px;
         padding-top: 8px;
       }
+      @include sp{
+        width: 140px;
+      }
       &:hover{
         opacity: 0.7;
       }

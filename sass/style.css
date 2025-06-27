@@ -158,8 +158,8 @@ input[type=checkbox] {
 input[type=checkbox] + span {
   display: inline-block;
   position: relative;
-  padding: 0 0 0 1.2em;
-  margin: 0 0.2em 0;
+  padding: 0 0 0 2em;
+  margin: 0;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -172,8 +172,8 @@ input[type=checkbox] + span::before {
   background: #fff;
   border: 1px solid #363636;
   border-radius: 2px;
-  width: 1em;
-  height: 1em;
+  width: 1.5em;
+  height: 1.5em;
   display: block;
 }
 input[type=checkbox] + span::after {
@@ -1358,7 +1358,7 @@ select:focus {
 }
 @media (max-width: 768px) {
   .ques__card-lower img {
-    width: 16px;
+    width: 20px;
   }
 }
 
@@ -1453,6 +1453,11 @@ select:focus {
   .header__logo a {
     width: 170px;
     padding-top: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .header__logo a {
+    width: 140px;
   }
 }
 .header__logo a:hover {
@@ -2118,6 +2123,7 @@ select:focus {
   .form-row {
     flex-direction: column;
     gap: 8px;
+    margin-bottom: 12px;
   }
 }
 
@@ -2197,20 +2203,8 @@ textarea {
 }
 
 button {
-  background: #a52a2a;
-  color: white;
-  padding: 20px;
-  font-size: 16px;
-  line-height: 1;
   border: none;
-  border-radius: 999px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  line-height: 1.5;
-}
-button:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transform: translateY(-2px);
 }
 
 .contact__desc {
@@ -2220,6 +2214,12 @@ button:hover {
   letter-spacing: 0.02em;
   line-height: 2;
   color: #555;
+}
+@media (max-width: 768px) {
+  .contact__desc {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
 }
 
 .contact__btn {
@@ -2242,6 +2242,7 @@ button:hover {
 @media (max-width: 768px) {
   .contact__btn {
     max-width: 100%;
-    padding: 16px 8px;
+    width: 100%;
+    padding: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

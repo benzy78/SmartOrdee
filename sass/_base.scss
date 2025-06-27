@@ -177,8 +177,8 @@ input {
 		+ span {
 			display: inline-block;
 			position: relative;
-			padding: 0 0 0 1.2em;
-			margin: 0 0.2em 0;
+			padding: 0 0 0 2em;
+			margin: 0;
 			cursor: pointer;
 			transition: all 0.3s ease 0s;
 
@@ -191,8 +191,8 @@ input {
 				background: #fff;
 				border: 1px solid $MainColor;
 				border-radius: 2px;
-				width: 1em;
-				height: 1em;
+				width: 1.5em;
+				height: 1.5em;
 				display: block;
 			}
 
